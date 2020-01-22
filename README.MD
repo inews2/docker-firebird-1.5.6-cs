@@ -2,7 +2,7 @@
 
 ## Description
 
-Firebird 1.5.6 SuperServer
+Firebird 1.5.6 Classic
 
 ### Provides
 
@@ -12,6 +12,7 @@ Firebird 1.5.6 SuperServer
 
  * /backup
  * /data
+ * /opt/firebird
 
 ### Exposed Ports
 
@@ -35,7 +36,7 @@ for example add "-e Europe/Sarajevo" to your docker run command.
 		-p 3050:3050 \
 		-v /somehostdir/firebird/backup/:/backup/ \
 		-v /somehostdir/firebird/data/:/data/ \
-		mladenp87/firebird1.5.6-ss
+		inews2/firebird1.5.6-cs
 
 ## Misc
 
