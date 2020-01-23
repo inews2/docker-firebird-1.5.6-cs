@@ -33,4 +33,4 @@ VOLUME /opt/firebird
 
 EXPOSE 3050/tcp
 
-ENTRYPOINT ["script", "-c", "xinetd -d -dontfork"]
+ENTRYPOINT ["script", "-c", "xinetd -dontfork"]
