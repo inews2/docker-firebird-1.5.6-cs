@@ -17,7 +17,8 @@ RUN dpkg --add-architecture i386 \
     && sed -i "237,238s/^/# /" scripts/postinstall.sh \
     && sed -i "313aNewPasswd=masterkey" scripts/postinstall.sh \
     && sh install.sh \
-    && rm -rf /usr/src/firebird 
+    && rm -rf /usr/src/firebird \
+    && apt-get clean
 
 ENV PATH $PATH:/opt/firebird/bin
 
